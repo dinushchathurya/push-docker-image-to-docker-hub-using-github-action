@@ -29,7 +29,7 @@ jobs:
       with:
         context: .
         tags: |
-          nodejs-docker:latest
+          nodejs-docker
         push: ${{ github.ref == 'refs/heads/main' }}
 
     - name: Image digest
