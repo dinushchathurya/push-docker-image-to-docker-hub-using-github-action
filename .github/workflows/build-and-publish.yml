@@ -33,7 +33,7 @@ jobs:
         push: ${{ github.ref == 'refs/heads/main' }}
     
     - name: Inspect
-        run: |
+        run:
           docker image inspect myimage:latest
 
     - name: Image digest
