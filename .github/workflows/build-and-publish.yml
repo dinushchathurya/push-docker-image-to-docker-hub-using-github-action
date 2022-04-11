@@ -30,6 +30,10 @@ jobs:
         context: .
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-docker:latest
         push: true
+    
+    - name: Inspect
+      run: 
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-docker:latest
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
