@@ -27,7 +27,7 @@ jobs:
     - name: Build image and push to Docker Hub
       uses: docker/build-push-action@v2
       with:
-        context: .
+        push: true
         tags: |
           nodejs-docker:latest 
         push: ${{ github.ref == 'refs/heads/main' }}
