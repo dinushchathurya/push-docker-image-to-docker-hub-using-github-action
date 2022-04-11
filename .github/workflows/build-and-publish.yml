@@ -31,7 +31,6 @@ jobs:
         push: true
         tags: |
           nodejs-docker:latest 
-        push: ${{ github.ref == 'refs/heads/main' }}
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
