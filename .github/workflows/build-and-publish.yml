@@ -8,10 +8,8 @@ on:
     branches: [main]
 
 jobs:
- 
-  build-and-push-docker-image:
-    name: Build Docker image and push to repositories
-
+  build:
+    
     runs-on: ubuntu-latest
 
     steps:
