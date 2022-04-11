@@ -31,6 +31,10 @@ jobs:
         tags: |
           dinushchathurya/nodejs-docker:latest
         push: ${{ github.ref == 'refs/heads/main' }}
+    
+    - name: Inspect
+        run: |
+          docker image inspect myimage:latest
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
