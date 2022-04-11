@@ -28,7 +28,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: .
-        tags: /usr/src/app.dinushchathurya/nodejs-docker:latest
+        tags: nodejs-docker:latest
         push: ${{ github.ref == 'refs/heads/main' }}
 
     - name: Image digest
