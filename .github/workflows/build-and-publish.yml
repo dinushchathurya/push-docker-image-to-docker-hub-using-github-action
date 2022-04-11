@@ -33,8 +33,8 @@ jobs:
         push: ${{ github.ref == 'refs/heads/main' }}
     
     - name: Inspect
-        run:
-          docker image inspect myimage:latest
+        run: |
+          docker image  dinushchathurya/nodejs-docker:latest
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
