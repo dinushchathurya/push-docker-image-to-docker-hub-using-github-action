@@ -27,7 +27,6 @@ jobs:
     - name: Build image and push to Docker Hub
       uses: docker/build-push-action@v2
       with:
-        constext: .
         push: true
         tags: |
           nodejs-docker:latest 
