@@ -7,6 +7,7 @@ on:
   pull_request: 
     branches: [main]
 
+
 jobs:
 
   build:
@@ -14,9 +15,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v3
+      echo: "Checking out the main branch"
+# jobs:
 
-      - uses: actions/checkout@v2
-        echo: "Checking out main branch"
+#   build:
+
+#     runs-on: ubuntu-latest
+
+#     steps:
+
+#       - uses: actions/checkout@v2
+#         echo: "Checking out main branch"
 
       # - name: Set up Docker Buildx
       #   id: buildx
